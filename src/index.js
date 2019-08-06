@@ -87,7 +87,7 @@ function Square(props) {
       const history = this.state.history;
       const current = history[this.state.stepNumber];
       const winner = calculateWinner(current.squares);
-      const draw = !winner && `<li key="9">`;
+      const draw = !winner && this.state.stepNumber === 9;
 
       const moves = history.map((step, move) => {
           const desc = move ?
