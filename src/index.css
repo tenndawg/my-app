@@ -49,3 +49,11 @@ body {
     margin-left: 20px;
   }
   
+  .move-list-item-selected{
+    float: left;
+    font-weight: bold;
+  }
+
+  .square.highlight {
+    background: #ddd
+  }
